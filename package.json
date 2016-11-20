@@ -1,0 +1,55 @@
+{
+  "name": "automate-caisse-epargne",
+  "version": "1.0.0",
+  "description": "Automate Node.js pour se connecter automatiquement à son compte client.",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/*.test.js",
+    "build": "./node_modules/gulp/bin/gulp.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "prod": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nowis-st/automate-caisse-epargne.git"
+  },
+  "keywords": [
+    "node.js",
+    "nodejs",
+    "caisse",
+    "epargne"
+  ],
+  "author": "Simon Tannai <tannai.simon@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nowis-st/automate-caisse-epargne/issues"
+  },
+  "homepage": "https://github.com/nowis-st/nodejs-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "file-stream-rotator": "0.0.7",
+    "helmet": "^2.2.0",
+    "log4js": "^0.6.38",
+    "morgan": "^1.7.0",
+    "node-horseman": "^3.2.0",
+    "phantom": "^3.0.3"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "uglify-js": "https://github.com/mishoo/UglifyJS2#harmony",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
+  }
+}
