@@ -14,11 +14,11 @@ const logger            = require(__dirname+'/../logger/logger.js');
 const caisseEpargneAutomateController = require(__dirname+'/caisseEpargneAutomateController.js');
 
 /**
- * Get solde
- * URI: GET /
+ * Get accounts balance
+ * URI: GET /getAccountsBalance
  */
-router.get('/getSolde', (req, res) => {
-  caisseEpargneAutomateController.getSolde()
+router.get('/getAccountsBalance', (req, res) => {
+  caisseEpargneAutomateController.getAccountsBalance()
   .then(
     (solde) => {
       return res.status(200).send(solde);
